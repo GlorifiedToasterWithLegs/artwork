@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite + TS</title>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Statue Addition Form</h2>
+			<div class="row">
+				  <div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Total Submissions:</div>
+						<div class="panel-body" id="total">0</div>
+					</div>
+				  </div>
+				  <div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Total Price:</div>
+						<div class="panel-body" id="cost">0</div>
+					</div>
+				  </div>
+			</div>
+			<form id="statueForm">
+				<div class="form-group">
+					<label for="statueName">Name:</label>
+					<input type="text" class="form-control" placeholder="What is it called (eg. 'The Thinker')" name="statueName" id="statueName">
+				</div>
+				<div class="form-group">
+					<label for="statueYear">Year of Creation:</label>
+					<input type="number" class="form-control" placeholder="When was the statue made (eg. '1904')" name="statueYear" id="statueYear">
+				</div>
+				<div class="form-group">
+					<label for="statuePrice">Price:</label>
+					<input type="number" class="form-control" placeholder="How expensive is it in HUF (eg. '4049730650')" name="statuePrice" id="statuePrice">
+				</div>
+				<div class="form-group">
+					<label for="statueHeight">Height:</label>
+					<input type="number" class="form-control" placeholder="How tall is it in cm (eg. '72')" name="statueHeight" id="statueHeight">
+				</div>
+				<button type="submit" id="statueSubmit" class="btn btn-default">Submit</button>
+			</form>
+			<div class="alert alert-danger invisible" id="errorBox">
+			</div>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
